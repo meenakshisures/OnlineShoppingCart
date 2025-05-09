@@ -1,7 +1,0 @@
-CREATE TABLE Enquiries (
-    enquiry_id INT IDENTITY(1,1) PRIMARY KEY,
-    name NVARCHAR(255) NOT NULL,
-    email NVARCHAR(255) NOT NULL,
-    message NVARCHAR(MAX) NOT NULL,
-    created_at DATETIME DEFAULT GETDATE()
-);
