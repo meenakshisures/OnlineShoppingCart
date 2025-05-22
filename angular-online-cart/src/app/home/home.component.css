@@ -1,0 +1,25 @@
+.product{
+    width: 400px;
+    border: teal 2px solid;
+}
+.product h2{
+    /* padding: 5px; */
+    text-align: center;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.flex img{
+    padding: 10px;
+}
+.flex p{
+    padding: 5px;
+}
+.card{
+    border: grey 2px solid;
+    box-shadow: 4px 4px 2px grey;
+    background-color: lightcyan;
+    padding: 5px;
+}

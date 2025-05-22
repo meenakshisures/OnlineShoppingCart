@@ -1,0 +1,14 @@
+<p>home works!</p>
+productList
+{{productList | json}}
+<hr>
+<!-- {{productList[0] |json}} -->
+ <div class="product" [ngClass]="i==1?'card':''" *ngFor="let x of productList;let i =index">
+    <h2  [ngStyle]="{'background-color':'green'}">{{x.name}} -{{x.price}}</h2>
+    <div class="flex">
+        <img [src]="x.image" alt="">
+        <div>
+            <p>{{x.description.length>200 ? x.description.slice(0,220)+"..." :  x.description}}</p>
+        </div>
+    </div>
+ </div>

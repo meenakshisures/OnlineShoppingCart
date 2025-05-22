@@ -1,0 +1,12 @@
+<div style="text-align:center; margin-top: 50px;">
+    Product list -{{productId}}
+    <h2 *ngIf="productId; else defaultMessage">
+      Displaying product with ID: {{ productId }}
+    </h2>
+    <a routerLink="/home">Navigate to home</a>
+  
+    <ng-template #defaultMessage>
+      <h2>Welcome to the Product Page</h2>
+    </ng-template>
+  </div>
+  
